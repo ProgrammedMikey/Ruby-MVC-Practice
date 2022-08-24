@@ -1,5 +1,9 @@
 <p style="color: green"><%= notice %></p>
 
+<% content_for :title do %>
+  <%= @entry.meal_type %>
+<% end %>
+
 <%= render @entry %>
 
 <div>
